@@ -1,11 +1,8 @@
-import Controlador.ProcesoInfromacion;
-import Ejercicio1.Pr1SerieFibonacci;
-
-import java.util.Scanner;
+import Controlador.InformationProcess;
 
 public class Main {
     public static void main(String[] args) {
-        ProcesoInfromacion procesos= new ProcesoInfromacion();
+        InformationProcess procesos= new InformationProcess();
         procesos.run();
     }
 }

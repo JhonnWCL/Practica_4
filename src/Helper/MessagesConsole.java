@@ -1,8 +1,8 @@
 package Helper;
 
-public class PrintMesajesConsol {
+public class MessagesConsole {
 
-    public void printMenuPractica4(){
+    public void showOptionsMenu(){
         System.out.println(Colors.Blue+"----------------------------------------------------- OPCIONES ----------------------------------------------------");
         System.out.println("> Digite el numero de una de las pociones, "+ Colors.Red+"0 "+Colors.Blue+" para salir del programa en cualquier momento");
         System.out.println(">"+ Colors.Red+" 1"+Colors.Blue+" Almacenar una cantidad N de la serie fibonacci en un Arraylist y mostrarlo");
@@ -11,36 +11,33 @@ public class PrintMesajesConsol {
         System.out.print(Colors.Blue+"Opcion> "+Colors.Default);
     }
 
-    public void printNumeroInvalido(){
+    public void showMsjInvalidNumber(){
         System.out.println("x El dato ingresado es invalido digite un numero entero positivo");
     }
 
-    public void printOpcioinInvalida(){
+    public void showMsjInvalidOption(){
         System.out.println("x La opcion indicada es incorrecta");
     }
 
-    public void printProcesootransformacion(){
+    public void showAnswerFibo(){
         System.out.println("Primer y ultimo elemento de la serie fibonacci almacenado en un Linked List: ");
     }
 
-    public void printNRangoFibo(){
+    public void showMsjRangeF(){
         System.out.println(Colors.Blue+"Opcion> "+Colors.Default+" Ingrese la cantida N para la serie fibonacci");
         System.out.print(Colors.Blue+"Cantidad> "+Colors.Default);
     }
-    public void printTitulo(){
+    public void showTitle(){
         System.out.println("**************************************** PRACTICA 4****************************************");
     }
 
-    public void printPaiseContinentes(){
+    public void showTitleCountries(){
         System.out.println(Colors.Red+"Paises y continentes del mundo:"+Colors.Default);
+        System.out.println(Colors.Yellow+"-------------------------------------------------------"+Colors.Default);
+        System.out.printf("%-25s%-30s%-20s\n", Colors.Blue+"CONTINENTE"+Colors.Yellow, "      PAIS", Colors.Default+"     CLAVE");
+        System.out.println(Colors.Yellow+"-------------------------------------------------------"+Colors.Default);
     }
-    public void printNoRangoFibo(){
+    public void showMsjNotFibo(){
         System.out.println(Colors.Red+"No registro el rango de la serie fibonacci para que se almacene en el arreglo"+Colors.Default);
-    }
-
-    public void printTitulos(){
-        System.out.println("*******************************************");
-        System.out.printf("%-10s%-20s%-20s\n", "CLAVE", "CONTINENTE", "PAIS");
-        System.out.println("*******************************************");
     }
 }

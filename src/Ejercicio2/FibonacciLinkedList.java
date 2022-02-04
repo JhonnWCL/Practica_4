@@ -8,6 +8,7 @@ public class FibonacciLinkedList {
     public  FibonacciLinkedList(){
         fibonacciList = new LinkedList<>();
     }
+
     public String getFrLsFibo(ArrayList<Integer> fibo){
         fibo.forEach((e)->fibonacciList.add(e));
     return "\n"+fibonacciList.getFirst()+" como primero y "+fibonacciList.getLast()+" como ultimo valor";
