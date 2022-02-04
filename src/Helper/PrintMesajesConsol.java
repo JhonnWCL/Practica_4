@@ -37,4 +37,10 @@ public class PrintMesajesConsol {
     public void printNoRangoFibo(){
         System.out.println(Colors.Red+"No registro el rango de la serie fibonacci para que se almacene en el arreglo"+Colors.Default);
     }
+
+    public void printTitulos(){
+        System.out.println("*******************************************");
+        System.out.printf("%-10s%-20s%-20s\n", "CLAVE", "CONTINENTE", "PAIS");
+        System.out.println("*******************************************");
+    }
 }

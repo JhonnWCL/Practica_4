@@ -12,7 +12,6 @@ import java.util.HashMap;
 
 public class ProcesoInfromacion {
     private int opcionValida;
-    private String opcionIngresada;
     private PrintMesajesConsol consola;
     private Validaciones validacion;
     private Pr1SerieFibonacci pr1;
@@ -79,9 +78,7 @@ public class ProcesoInfromacion {
     }
 
     private void ordenarPorContinente(HashMap<String, Pais> list) {
-        System.out.println("*******************************************");
-        System.out.printf("%-10s%-20s%-20s\n", "CLAVE", "CONTINENTE", "PAIS");
-        System.out.println("*******************************************");
+        consola.printTitulos();
         list.entrySet()
                 .stream()
                 .sorted(Map.Entry.comparingByValue())
